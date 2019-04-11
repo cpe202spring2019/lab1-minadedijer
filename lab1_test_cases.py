@@ -43,7 +43,7 @@ class TestLab1(unittest.TestCase):
             bin_search(0,0,3,tlist)
 
     def test_bin_search3(self):
-        list_val =[7,9,23,5,6,7,8,3,5,7,9,4,6]
+        list_val =[0,2,3,14,22,36,57,88,99]
         low = 0
         high = len(list_val)-1
         self.assertEqual(bin_search(3, 0, len(list_val)-1, list_val), 2 )

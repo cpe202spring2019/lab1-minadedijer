@@ -30,7 +30,7 @@ def bin_search(target, low, high, int_list):  # must use recursion
     if int_list== None:
         raise ValueError("list equals None")
     else:
-        mid=int(len(int_list)/2)
+        mid=int((low+high)/2.0)
         if int_list[mid]==target:
             return mid
         elif target > int_list[mid]:
